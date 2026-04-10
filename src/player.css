@@ -1,0 +1,47 @@
+.player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.player-ui {
+  background: rgba(0, 0, 0, 0.9);
+  border-left: 6px solid #ff2a2a;
+  padding: 14px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  transform: skewX(-10deg);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+  min-width: 220px;
+}
+
+.song-name {
+  font-size: 14px;
+  color: #ffffffcc;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.player button {
+  background: none;
+  border: 1px solid #ff2a2a;
+  color: #ff2a2a;
+  font-size: 16px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.player button:hover {
+  background: #ff2a2a;
+  color: black;
+  transform: scale(1.1);
+}
